@@ -4,6 +4,6 @@
 game._Config = {
     language : game._Enum.language.en,    // cn or en
 
-    show_ads : false,
+    //show_ads : false,
 
 };

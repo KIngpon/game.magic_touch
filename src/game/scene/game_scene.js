@@ -10,9 +10,9 @@ game.GameScene = cc.Scene.extend({
 
 
 
-        if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-            window['Ads']['topAds']();
-        }
+        //if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
+        //    window['Ads']['topAds']();
+        //}
 
 
         this._gameLayer = new game.GameLayer();
