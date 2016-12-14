@@ -54,9 +54,9 @@ cc.game.onStart = function(){
     //load resources
 
 
-    if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
-        window['Ads']['fullViewAds']();
-    }
+    //if(game._Config.show_ads && game._Config.language == game._Enum.language.en) {
+    //    window['Ads']['fullViewAds']();
+    //}
 
 
 
@@ -74,5 +74,5 @@ cc.game.onStart = function(){
 
 
 
-window.location.href.match('ookor')&&
+//window.location.href.match('ookor')&&
 cc.game.run();
