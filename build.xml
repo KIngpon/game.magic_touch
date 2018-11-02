@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="/Users/zhaojm/.projects/game.magic_touch" default="compile">
+<project name="Javascript compress project" basedir="/Users/zhaojm/projects/game.magic_touch" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
-             classpath="/Users/zhaojm/ides/cocos2d-x-3.13.1/tools/cocos2d-console/plugins/plugin_compile/build_web/bin/compiler-1.7.jar"/>
+             classpath="/Users/zhaojm/ides/cocos2d-x-3.17/tools/cocos2d-console/plugins/plugin_compile/build_web/bin/compiler-1.7.jar"/>
 
     <target name="compile">
         <jscomp compilationLevel="advanced" 
                 warning="quiet"
                 debug="false" 
-                output="/Users/zhaojm/.projects/game.magic_touch/publish/html5/game.min.js"
+                output="/Users/zhaojm/projects/game.magic_touch/publish/html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="/Users/zhaojm/.projects/game.magic_touch/frameworks/cocos2d-html5">
+            <sources dir="/Users/zhaojm/projects/game.magic_touch/frameworks/cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="cocos2d/core/event-manager/CCEventHelper.js"/>
                 <file name="CCDebugger.js"/>
@@ -26,8 +26,6 @@
                 <file name="cocos2d/core/platform/CCConfig.js"/>
                 <file name="cocos2d/core/platform/miniFramework.js"/>
                 <file name="cocos2d/core/platform/CCMacro.js"/>
-                <file name="cocos2d/core/platform/CCTypesWebGL.js"/>
-                <file name="cocos2d/core/platform/CCTypesPropertyDefine.js"/>
                 <file name="cocos2d/core/platform/CCTypes.js"/>
                 <file name="cocos2d/core/platform/CCEGLView.js"/>
                 <file name="cocos2d/core/platform/CCScreen.js"/>
@@ -43,6 +41,7 @@
                 <file name="cocos2d/core/event-manager/CCEventListener.js"/>
                 <file name="cocos2d/core/event-manager/CCEventManager.js"/>
                 <file name="cocos2d/core/event-manager/CCEventExtension.js"/>
+                <file name="cocos2d/core/renderer/GlobalVertexBuffer.js"/>
                 <file name="cocos2d/core/renderer/RendererCanvas.js"/>
                 <file name="cocos2d/core/renderer/RendererWebGL.js"/>
                 <file name="cocos2d/core/renderer/DirtyRegion.js"/>
@@ -101,16 +100,17 @@
                 <file name="cocos2d/shaders/CCShaders.js"/>
                 <file name="cocos2d/shaders/CCShaderCache.js"/>
                 <file name="cocos2d/shaders/CCGLProgram.js"/>
+                <file name="cocos2d/shaders/CCGLProgramState.js"/>
                 <file name="cocos2d/shaders/CCGLStateCache.js"/>
                 <file name="cocos2d/render-texture/CCRenderTexture.js"/>
                 <file name="cocos2d/render-texture/CCRenderTextureCanvasRenderCmd.js"/>
                 <file name="cocos2d/render-texture/CCRenderTextureWebGLRenderCmd.js"/>
-                <file name="cocos2d/labels/CCLabelAtlas.js"/>
-                <file name="cocos2d/labels/CCLabelAtlasCanvasRenderCmd.js"/>
-                <file name="cocos2d/labels/CCLabelAtlasWebGLRenderCmd.js"/>
                 <file name="cocos2d/labels/CCLabelBMFont.js"/>
                 <file name="cocos2d/labels/CCLabelBMFontCanvasRenderCmd.js"/>
                 <file name="cocos2d/labels/CCLabelBMFontWebGLRenderCmd.js"/>
+                <file name="cocos2d/labels/CCLabelAtlas.js"/>
+                <file name="cocos2d/labels/CCLabelAtlasCanvasRenderCmd.js"/>
+                <file name="cocos2d/labels/CCLabelAtlasWebGLRenderCmd.js"/>
                 <file name="cocos2d/motion-streak/CCMotionStreak.js"/>
                 <file name="cocos2d/motion-streak/CCMotionStreakWebGLRenderCmd.js"/>
                 <file name="cocos2d/node-grid/CCNodeGrid.js"/>
@@ -142,8 +142,6 @@
                 <file name="cocos2d/transitions/CCTransitionPageTurn.js"/>
                 <file name="cocos2d/compression/ZipUtils.js"/>
                 <file name="cocos2d/compression/base64.js"/>
-                <file name="cocos2d/compression/gzip.js"/>
-                <file name="cocos2d/compression/zlib.min.js"/>
                 <file name="cocos2d/particle/CCPNGReader.js"/>
                 <file name="cocos2d/particle/CCTIFFReader.js"/>
                 <file name="cocos2d/particle/CCParticleSystem.js"/>
@@ -157,6 +155,8 @@
                 <file name="cocos2d/text-input/CCTextFieldTTF.js"/>
                 <file name="cocos2d/menus/CCMenuItem.js"/>
                 <file name="cocos2d/menus/CCMenu.js"/>
+                <file name="cocos2d/compression/gzip.js"/>
+                <file name="cocos2d/compression/zlib.min.js"/>
                 <file name="cocos2d/tilemap/CCTGAlib.js"/>
                 <file name="cocos2d/tilemap/CCTMXTiledMap.js"/>
                 <file name="cocos2d/tilemap/CCTMXXMLParser.js"/>
